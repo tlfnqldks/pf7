@@ -1,0 +1,32 @@
+.row>div{
+  border: 1px solid;
+}
+main{
+  
+}
+/* main .mu{
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+main .mu li{
+  display: table-cell;
+  border: 1px solid;
+  box-sizing: border-box;
+} */
+main .mu{
+  background-color: yellow;
+}
+main .mu::before{
+  content: "";
+  display: table;
+}
+main .mu li{
+  float: left;
+  border: 1px solid;
+}
+main .mu::after{
+  content: "";
+  display: table;
+    clear: both;
+}
